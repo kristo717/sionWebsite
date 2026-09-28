@@ -366,6 +366,44 @@
     </div>
 </div>
 
+            <div class="row g-4">
+    <div class="col-md-4">
+        <!-- Tarjeta activa que abre el Modal al hacer clic -->
+        <div class="culto-card minimal-card p-0 overflow-hidden cursor-pointer h-100" 
+             data-bs-toggle="modal" 
+             data-bs-target="#videoModal" 
+             data-video-src="https://drive.google.com/file/d/1EUWTCfZXTg-FtPeM5ghWJPd9zgp_SubZ/preview" 
+             data-video-title="Culto Dominical: No temas, YO SOY TU DIOS.">
+            
+            <div class="position-relative video-thumbnail-container">
+                <!-- Marco de vista previa -->
+                <iframe src="https://drive.google.com/file/d/1EUWTCfZXTg-FtPeM5ghWJPd9zgp_SubZ/preview" 
+                        width="100%" 
+                        height="220" 
+                        style="border:none; pointer-events: none;">
+                </iframe>
+
+                <!-- Capa transparente para capturar el clic sobre todo el área -->
+                <div class="play-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                    <div class="play-button-icon">
+                        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    </div>
+                </div>
+                <span class="badge bg-dark bg-opacity-75 position-absolute bottom-0 end-0 m-2 px-2 py-1 small rounded-2">105 min</span>
+            </div>
+            
+            <div class="p-4">
+                <span class="badge badge-minimal badge-blue mb-2">Culto Dominical</span>
+                <h5 class="card-title mb-2 fw-bold text-dark">Culto Dominical: No temas, YO SOY TU DIOS.</h5>
+                <p class="small text-muted mb-0 d-flex align-items-center gap-1">
+                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    20 de Septiembre, 2026.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
 <!-- Modal de Bootstrap para reproducir el video -->
 <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
