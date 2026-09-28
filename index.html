@@ -320,123 +320,146 @@
     </section>
 
     <!-- 3. SECCIÓN CULTOS SEMANALES -->
-    <section id="services" class="section-padding">
-        <div class="container">
-            <div class="text-center mb-5">
-                <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-1 rounded-pill fw-semibold small mb-2">Mensajes Bíblicos</span>
-                <h2 class="section-title">Cultos y Predicaciones</h2>
-                <p class="section-subtitle">Revive y comparte nuestros cultos más recientes, estudios bíblicos y tiempos de adoración en video.</p>
-            </div>      
-            <!-- Contenedor principal de la cuadrícula de videos -->
-<div class="row g-4">
+<section id="services" class="section-padding">
+    <div class="container">
+        <!-- Encabezado de Sección -->
+        <div class="text-center mb-5">
+            <span class="badge bg-danger bg-opacity-10 text-danger px-3 py-1 rounded-pill fw-semibold small mb-2">
+                Mensajes Bíblicos
+            </span>
+            <h2 class="section-title">Cultos y Predicaciones</h2>
+            <p class="section-subtitle">
+                Revive y comparte nuestros cultos más recientes, estudios bíblicos y tiempos de adoración en video.
+            </p>
+        </div>     
 
-    <!-- VIDEO 1: 27 de Septiembre -->
-    <div class="col-md-4">
-        <div class="culto-card minimal-card p-0 overflow-hidden cursor-pointer h-100" 
-             data-bs-toggle="modal" 
-             data-bs-target="#videoModal" 
-             data-video-src="https://drive.google.com/file/d/1eV6ADvnfbMDVyzpAtJoY3Lf_T3k_yH-8/preview" 
-             data-video-title="Culto Dominical: No temas, YO ESTOY CONTIGO.">
-            
-            <div class="position-relative video-thumbnail-container bg-dark d-flex align-items-center justify-content-center" style="height: 200px;">
-                <!-- Capa con el botón de reproducir sobre la portada -->
-                <div class="play-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                    <div class="play-button-icon">
-                        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+        <!-- Contenedor Principal de la Cuadrícula -->
+        <div class="row g-4">
+
+            <!-- VIDEO 1: 27 de Septiembre -->
+            <div class="col-md-4">
+                <article class="culto-card minimal-card p-0 overflow-hidden cursor-pointer h-100 shadow-sm" 
+                         data-bs-toggle="modal" 
+                         data-bs-target="#videoModal" 
+                         data-video-src="https://drive.google.com/file/d/1eV6ADvnfbMDVyzpAtJoY3Lf_T3k_yH-8/preview" 
+                         data-video-title="Culto Dominical: No temas, YO ESTOY CONTIGO."
+                         data-video-date="27 de Septiembre, 2026"
+                         data-video-desc="Un mensaje inspirador sobre permanecer firmes en la promesa de Dios en tiempos de prueba."
+                         role="button"
+                         tabindex="0"
+                         aria-label="Ver video: No temas, YO ESTOY CONTIGO">
+                    
+                    <div class="position-relative video-thumbnail-container bg-dark d-flex align-items-center justify-content-center overflow-hidden" style="height: 200px;">
+                        <div class="play-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center bg-black bg-opacity-25 transition">
+                            <div class="play-button-icon bg-white text-danger rounded-circle p-3 d-flex align-items-center justify-content-center shadow">
+                                <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <span class="badge bg-dark bg-opacity-75 position-absolute bottom-0 end-0 m-2 px-2 py-1 small rounded-2">105 min</span>
+                    </div>
+                    
+                    <div class="p-4">
+                        <span class="badge badge-minimal badge-blue mb-2">Culto Dominical</span>
+                        <h3 class="card-title h5 mb-2 fw-bold text-dark">Culto Dominical: No temas, YO ESTOY CONTIGO.</h3>
+                        <p class="small text-muted mb-0 d-flex align-items-center gap-1">
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            27 de Septiembre, 2026.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- VIDEO 2: 20 de Septiembre -->
+            <div class="col-md-4">
+                <article class="culto-card minimal-card p-0 overflow-hidden cursor-pointer h-100 shadow-sm" 
+                         data-bs-toggle="modal" 
+                         data-bs-target="#videoModal" 
+                         data-video-src="https://drive.google.com/file/d/1EUWTCfZXTg-FtPeM5ghWJPd9zgp_SubZ/preview" 
+                         data-video-title="Culto Dominical: No temas, YO SOY TU DIOS."
+                         data-video-date="20 de Septiembre, 2026"
+                         data-video-desc="Cree en Su poder y mantén la fe en todo momento."
+                         role="button"
+                         tabindex="0"
+                         aria-label="Ver video: No temas, YO SOY TU DIOS">
+                    
+                    <div class="position-relative video-thumbnail-container bg-dark d-flex align-items-center justify-content-center overflow-hidden" style="height: 200px;">
+                        <div class="play-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center bg-black bg-opacity-25 transition">
+                            <div class="play-button-icon bg-white text-danger rounded-circle p-3 d-flex align-items-center justify-content-center shadow">
+                                <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <span class="badge bg-dark bg-opacity-75 position-absolute bottom-0 end-0 m-2 px-2 py-1 small rounded-2">105 min</span>
+                    </div>
+                    
+                    <div class="p-4">
+                        <span class="badge badge-minimal badge-blue mb-2">Culto Dominical</span>
+                        <h3 class="card-title h5 mb-2 fw-bold text-dark">Culto Dominical: No temas, YO SOY TU DIOS.</h3>
+                        <p class="small text-muted mb-0 d-flex align-items-center gap-1">
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            20 de Septiembre, 2026.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- VIDEO 3: 13 de Septiembre -->
+            <div class="col-md-4">
+                <article class="culto-card minimal-card p-0 overflow-hidden cursor-pointer h-100 shadow-sm" 
+                         data-bs-toggle="modal" 
+                         data-bs-target="#videoModal" 
+                         data-video-src="https://drive.google.com/file/d/1EN1TDnMo_zndudIp6PHXPLXYvtezw6Tt/preview" 
+                         data-video-title="Culto Dominical: No temas, YO TE AYUDO."
+                         data-video-date="13 de Septiembre, 2026"
+                         data-video-desc="La mano de Dios siempre está extendida para socorrerte."
+                         role="button"
+                         tabindex="0"
+                         aria-label="Ver video: No temas, YO TE AYUDO">
+                    
+                    <div class="position-relative video-thumbnail-container bg-dark d-flex align-items-center justify-content-center overflow-hidden" style="height: 200px;">
+                        <div class="play-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center bg-black bg-opacity-25 transition">
+                            <div class="play-button-icon bg-white text-danger rounded-circle p-3 d-flex align-items-center justify-content-center shadow">
+                                <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                            </div>
+                        </div>
+                        <span class="badge bg-dark bg-opacity-75 position-absolute bottom-0 end-0 m-2 px-2 py-1 small rounded-2">105 min</span>
+                    </div>
+                    
+                    <div class="p-4">
+                        <span class="badge badge-minimal badge-blue mb-2">Culto Dominical</span>
+                        <h3 class="card-title h5 mb-2 fw-bold text-dark">Culto Dominical: No temas, YO TE AYUDO.</h3>
+                        <p class="small text-muted mb-0 d-flex align-items-center gap-1">
+                            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                            13 de Septiembre, 2026.
+                        </p>
+                    </div>
+                </article>
+            </div>
+
+        </div>
+
+        <!-- MODAL REUTILIZABLE -->
+        <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content bg-dark text-white border-0 shadow-lg">
+                    <div class="modal-header border-0">
+                        <div>
+                            <h4 class="modal-title h5 mb-0" id="videoModalLabel">Culto Dominical</h4>
+                            <small class="text-white-50" id="videoModalDate"></small>
+                        </div>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body p-0 ratio ratio-16x9">
+                        <iframe id="modalVideoIframe" src="" allow="autoplay" allowfullscreen title="Reproductor de video"></iframe>
+                    </div>
+                    <div class="modal-footer border-0 bg-dark text-start d-block" id="videoModalFooter">
+                        <p class="small text-white-50 mb-0" id="videoModalDesc"></p>
                     </div>
                 </div>
-                <span class="badge bg-dark bg-opacity-75 position-absolute bottom-0 end-0 m-2 px-2 py-1 small rounded-2">105 min</span>
-            </div>
-            
-            <div class="p-4">
-                <span class="badge badge-minimal badge-blue mb-2">Culto Dominical</span>
-                <h5 class="card-title mb-2 fw-bold text-dark">Culto Dominical: No temas, YO ESTOY CONTIGO.</h5>
-                <p class="small text-muted mb-0 d-flex align-items-center gap-1">
-                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                    27 de Septiembre, 2026.
-                </p>
             </div>
         </div>
+
     </div>
-
-    <!-- VIDEO 2: 20 de Septiembre -->
-    <div class="col-md-4">
-        <div class="culto-card minimal-card p-0 overflow-hidden cursor-pointer h-100" 
-             data-bs-toggle="modal" 
-             data-bs-target="#videoModal" 
-             data-video-src="https://drive.google.com/file/d/1EUWTCfZXTg-FtPeM5ghWJPd9zgp_SubZ/preview" 
-             data-video-title="Culto Dominical: No temas, YO SOY TU DIOS.">
-            
-            <div class="position-relative video-thumbnail-container bg-dark d-flex align-items-center justify-content-center" style="height: 200px;">
-                <!-- Capa con el botón de reproducir sobre la portada -->
-                <div class="play-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                    <div class="play-button-icon">
-                        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                    </div>
-                </div>
-                <span class="badge bg-dark bg-opacity-75 position-absolute bottom-0 end-0 m-2 px-2 py-1 small rounded-2">105 min</span>
-            </div>
-            
-            <div class="p-4">
-                <span class="badge badge-minimal badge-blue mb-2">Culto Dominical</span>
-                <h5 class="card-title mb-2 fw-bold text-dark">Culto Dominical: No temas, YO SOY TU DIOS.</h5>
-                <p class="small text-muted mb-0 d-flex align-items-center gap-1">
-                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                    20 de Septiembre, 2026.
-                </p>
-            </div>
-        </div>
-    </div>
-
-    <!-- VIDEO 3: 13 de Septiembre -->
-    <div class="col-md-4">
-        <div class="culto-card minimal-card p-0 overflow-hidden cursor-pointer h-100" 
-             data-bs-toggle="modal" 
-             data-bs-target="#videoModal" 
-             data-video-src="https://drive.google.com/file/d/1EN1TDnMo_zndudIp6PHXPLXYvtezw6Tt/preview" 
-             data-video-title="Culto Dominical: No temas, YO TE AYUDO.">
-            
-            <div class="position-relative video-thumbnail-container bg-dark d-flex align-items-center justify-content-center" style="height: 200px;">
-                <!-- Capa con el botón de reproducir sobre la portada -->
-                <div class="play-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
-                    <div class="play-button-icon">
-                        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                    </div>
-                </div>
-                <span class="badge bg-dark bg-opacity-75 position-absolute bottom-0 end-0 m-2 px-2 py-1 small rounded-2">105 min</span>
-            </div>
-            
-            <div class="p-4">
-                <span class="badge badge-minimal badge-blue mb-2">Culto Dominical</span>
-                <h5 class="card-title mb-2 fw-bold text-dark">Culto Dominical: No temas, YO TE AYUDO.</h5>
-                <p class="small text-muted mb-0 d-flex align-items-center gap-1">
-                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                    13 de Septiembre, 2026.
-                </p>
-            </div>
-        </div>
-    </div>
-
-
-</div>
-
-<!-- UN SOLO MODAL REUTILIZABLE PARA TODOS LOS VIDEOS -->
-<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-lg modal-dialog-centered">
-    <div class="modal-content bg-dark text-white">
-      <div class="modal-header border-0">
-        <h5 class="modal-title" id="videoModalLabel">Culto Dominical</h5>
-        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body p-0 ratio ratio-16x9">
-        <iframe id="modalVideoIframe" src="" allow="autoplay" allowfullscreen></iframe>
-      </div>
-    </div>
-  </div>
-</div>
-            
-        </div>
-    </section>
+</section>
 
     <!-- 4. SECCIÓN NOTICIAS Y ACTIVIDADES -->
     <section id="news" class="section-padding bg-light-minimal">
