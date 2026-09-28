@@ -327,79 +327,61 @@
                 <h2 class="section-title">Cultos y Predicaciones</h2>
                 <p class="section-subtitle">Revive y comparte nuestros cultos más recientes, estudios bíblicos y tiempos de adoración en video.</p>
             </div>
+            
             <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="culto-card minimal-card p-0 overflow-hidden cursor-pointer h-100" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="media/videos/bienvenida.mp4" data-video-title="Culto Dominical: Caminando en Fe y Victoria" data-video-date="24 de Agosto, 2026 • Pastor Juan Carlos Pérez" data-video-desc="Un mensaje inspirador sobre permanecer firmes en la promesa de Dios en tiempos de prueba.">
-                        <div class="position-relative video-thumbnail-container">
-                            <video class="video-thumbnail-preview" muted preload="metadata">
-                                <source src="media/videos/bienvenida.mp4#t=2" type="video/mp4">
-                            </video>
-                            <div class="play-overlay d-flex align-items-center justify-content-center">
-                                <div class="play-button-icon">
-                                    <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                                </div>
-                            </div>
-                            <span class="badge bg-dark bg-opacity-75 position-absolute bottom-0 end-0 m-2 px-2 py-1 small rounded-2">45:20 min</span>
-                        </div>
-                        <div class="p-4">
-                            <span class="badge badge-minimal badge-blue mb-2">Culto Dominical</span>
-                            <h5 class="card-title mb-2 fw-bold text-dark">Caminando en Fe y Victoria</h5>
-                            <p class="small text-muted mb-0 d-flex align-items-center gap-1">
-                                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                                24 de Agosto, 2026 • Pastor Juan Carlos Pérez
-                            </p>
-                        </div>
-                    </div>
-                </div>
+    <div class="col-md-4">
+        <!-- Tarjeta activa que abre el Modal al hacer clic -->
+        <div class="culto-card minimal-card p-0 overflow-hidden cursor-pointer h-100" 
+             data-bs-toggle="modal" 
+             data-bs-target="#videoModal" 
+             data-video-src="https://drive.google.com/file/d/1eV6ADvnfbMDVyzpAtJoY3Lf_T3k_yH-8/preview" 
+             data-video-title="Culto Dominical: No temas, YO ESTOY CONTIGO.">
+            
+            <div class="position-relative video-thumbnail-container">
+                <!-- Marco de vista previa -->
+                <iframe src="https://drive.google.com/file/d/1eV6ADvnfbMDVyzpAtJoY3Lf_T3k_yH-8/preview" 
+                        width="100%" 
+                        height="220" 
+                        style="border:none; pointer-events: none;">
+                </iframe>
 
-                <div class="col-md-4">
-                    <div class="culto-card minimal-card p-0 overflow-hidden cursor-pointer h-100" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="media/videos/bienvenida.mp4" data-video-title="Estudio Bíblico: La Gracia Transformadora de Cristo" data-video-date="20 de Agosto, 2026 • Pastor Carlos Gómez" data-video-desc="Profundización en la epístola a los Romanos sobre la justificación y la vida en el Espíritu.">
-                        <div class="position-relative video-thumbnail-container">
-                            <video class="video-thumbnail-preview" muted preload="metadata">
-                                <source src="media/videos/bienvenida.mp4#t=2" type="video/mp4">
-                            </video>
-                            <div class="play-overlay d-flex align-items-center justify-content-center">
-                                <div class="play-button-icon">
-                                    <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                                </div>
-                            </div>
-                            <span class="badge bg-dark bg-opacity-75 position-absolute bottom-0 end-0 m-2 px-2 py-1 small rounded-2">38:15 min</span>
-                        </div>
-                        <div class="p-4">
-                            <span class="badge badge-minimal badge-yellow mb-2">Estudio Bíblico</span>
-                            <h5 class="card-title mb-2 fw-bold text-dark">La Gracia Transformadora de Cristo</h5>
-                            <p class="small text-muted mb-0 d-flex align-items-center gap-1">
-                                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                                20 de Agosto, 2026 • Pastor Carlos Gómez
-                            </p>
-                        </div>
+                <!-- Capa transparente para capturar el clic sobre todo el área -->
+                <div class="play-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
+                    <div class="play-button-icon">
+                        <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
                     </div>
                 </div>
-
-                <div class="col-md-4">
-                    <div class="culto-card minimal-card p-0 overflow-hidden cursor-pointer h-100" data-bs-toggle="modal" data-bs-target="#videoModal" data-video-src="media/videos/bienvenida.mp4" data-video-title="Culto Dominical: Esperanza Viva e Inconmovible" data-video-date="17 de Agosto, 2026 • Pastor Juan Carlos Pérez" data-video-desc="Mensaje bíblico sobre la fidelidad eterna de Dios y Su presencia en medio de Su congregación.">
-                        <div class="position-relative video-thumbnail-container">
-                            <video class="video-thumbnail-preview" muted preload="metadata">
-                                <source src="media/videos/bienvenida.mp4#t=2" type="video/mp4">
-                            </video>
-                            <div class="play-overlay d-flex align-items-center justify-content-center">
-                                <div class="play-button-icon">
-                                    <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                                </div>
-                            </div>
-                            <span class="badge bg-dark bg-opacity-75 position-absolute bottom-0 end-0 m-2 px-2 py-1 small rounded-2">52:00 min</span>
-                        </div>
-                        <div class="p-4">
-                            <span class="badge badge-minimal badge-red mb-2">Culto Dominical</span>
-                            <h5 class="card-title mb-2 fw-bold text-dark">Esperanza Viva e Inconmovible</h5>
-                            <p class="small text-muted mb-0 d-flex align-items-center gap-1">
-                                <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                                17 de Agosto, 2026 • Pastor Juan Carlos Pérez
-                            </p>
-                        </div>
-                    </div>
-                </div>
+                <span class="badge bg-dark bg-opacity-75 position-absolute bottom-0 end-0 m-2 px-2 py-1 small rounded-2">105 min</span>
             </div>
+            
+            <div class="p-4">
+                <span class="badge badge-minimal badge-blue mb-2">Culto Dominical</span>
+                <h5 class="card-title mb-2 fw-bold text-dark">Culto Dominical: No temas, YO ESTOY CONTIGO.</h5>
+                <p class="small text-muted mb-0 d-flex align-items-center gap-1">
+                    <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+                    27 de Septiembre, 2026.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Bootstrap para reproducir el video -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content bg-dark text-white">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="videoModalLabel">Culto Dominical</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-0 ratio ratio-16x9">
+        <!-- El src del iframe se asignará automáticamente mediante JavaScript -->
+        <iframe id="modalVideoIframe" src="" allow="autoplay" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+            
         </div>
     </section>
 
