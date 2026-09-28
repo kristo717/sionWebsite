@@ -338,13 +338,8 @@
              data-video-src="https://drive.google.com/file/d/1eV6ADvnfbMDVyzpAtJoY3Lf_T3k_yH-8/preview" 
              data-video-title="Culto Dominical: No temas, YO ESTOY CONTIGO.">
             
-            <div class="position-relative video-thumbnail-container">
-                <iframe src="https://drive.google.com/file/d/1eV6ADvnfbMDVyzpAtJoY3Lf_T3k_yH-8/preview" 
-                        width="100%" 
-                        height="220" 
-                        style="border:none; pointer-events: none;">
-                </iframe>
-
+            <div class="position-relative video-thumbnail-container bg-dark d-flex align-items-center justify-content-center" style="height: 200px;">
+                <!-- Capa con el botón de reproducir sobre la portada -->
                 <div class="play-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
                     <div class="play-button-icon">
                         <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
@@ -372,13 +367,8 @@
              data-video-src="https://drive.google.com/file/d/1EUWTCfZXTg-FtPeM5ghWJPd9zgp_SubZ/preview" 
              data-video-title="Culto Dominical: No temas, YO SOY TU DIOS.">
             
-            <div class="position-relative video-thumbnail-container">
-                <iframe src="https://drive.google.com/file/d/1EUWTCfZXTg-FtPeM5ghWJPd9zgp_SubZ/preview" 
-                        width="100%" 
-                        height="220" 
-                        style="border:none; pointer-events: none;">
-                </iframe>
-
+            <div class="position-relative video-thumbnail-container bg-dark d-flex align-items-center justify-content-center" style="height: 200px;">
+                <!-- Capa con el botón de reproducir sobre la portada -->
                 <div class="play-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center">
                     <div class="play-button-icon">
                         <svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
@@ -400,7 +390,7 @@
 
 </div>
 
-<!-- UN SOLO MODAL COMPARTIDO PARA TODOS LOS VIDEOS -->
+<!-- UN SOLO MODAL REUTILIZABLE PARA TODOS LOS VIDEOS -->
 <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="videoModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-lg modal-dialog-centered">
     <div class="modal-content bg-dark text-white">
@@ -414,6 +404,7 @@
     </div>
   </div>
 </div>
+            
         </div>
     </section>
 
