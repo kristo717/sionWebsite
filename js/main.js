@@ -186,3 +186,31 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+document.addEventListener('DOMContentLoaded', function () {
+    var videoModal = document.getElementById('videoModal');
+    var modalIframe = document.getElementById('modalVideoIframe');
+    var modalTitle = document.getElementById('videoModalLabel');
+
+    if (videoModal) {
+        // Al abrir el modal, asigna la URL del video de Google Drive
+        videoModal.addEventListener('show.bs.modal', function (event) {
+            var button = event.relatedTarget;
+            var videoSrc = button.getAttribute('data-video-src');
+            var videoTitle = button.getAttribute('data-video-title');
+
+            if (modalIframe && videoSrc) {
+                modalIframe.src = videoSrc + '?autoplay=1';
+            }
+            if (modalTitle && videoTitle) {
+                modalTitle.textContent = videoTitle;
+            }
+        });
+
+        // Al cerrar el modal, limpia el iframe para detener la reproducción
+        videoModal.addEventListener('hide.bs.modal', function () {
+            if (modalIframe) {
+                modalIframe.src = '';
+            }
+        });
+    }
+});
